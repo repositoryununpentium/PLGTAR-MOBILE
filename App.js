@@ -3,6 +3,8 @@ import React from 'react';
 
 import Principal from './src/views/Principal';
 
+console.disableYellowBox = false;
+
 export default function App() {
   return(
     <Principal/>
