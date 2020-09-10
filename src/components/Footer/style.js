@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
 	texto: {
 		position: 'relative',
-		top: -10,
+		top: -34,
 		color: '#FFFFFF'
 	}
 

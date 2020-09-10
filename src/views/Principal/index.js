@@ -9,7 +9,7 @@ export default function Princiapl() {
     return(
         <View style={styles.container}>
             <Header isShowNotificacao={true} isShowBotaoVoltar={false} />
-            <Footer isAdicionarTarefa={true} />
+            <Footer isShowIconeAdicionarTarefa={true} />
         </View>
     )
 }
