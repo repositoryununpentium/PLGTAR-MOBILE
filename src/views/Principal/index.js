@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, ScrollView } from 'react-native';
 
 import styles from './style';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import CartaoTarefas from "../../components/CartaoTarefas";
 
 export default function Princiapl() {
 
@@ -44,6 +45,21 @@ export default function Princiapl() {
                     </Text>
                 </TouchableOpacity>
             </View>
+
+            <View style={styles.tituloTarefa}>
+                <Text style={styles.tituloTextoTarefa}>TAREFAS</Text>
+            </View>
+
+            <ScrollView style={styles.conteudoTarefas} contentContainerStyle={{alignItems: "center"}}>
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={true} />
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={false} />
+                <CartaoTarefas isTarefaConcluida={false} />
+            </ScrollView>
 
             <Footer isShowIconeAdicionarTarefa={true} />
         </View>

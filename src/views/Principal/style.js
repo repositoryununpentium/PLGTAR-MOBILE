@@ -28,7 +28,31 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 19,
         opacity: 0.5
-    }
+    },
+
+    conteudoTarefas: {
+        width: "100%",
+        marginTop: 16,
+        marginBottom: 90
+
+    },
+
+    tituloTarefa: {
+        width: "100%",
+        borderBottomWidth: 1,
+        borderColor: "#20295F",
+        alignItems: "center"
+    },
+
+    tituloTextoTarefa: {
+        color: "#20295F",
+        fontSize: 18,
+        fontWeight: "bold",
+        backgroundColor: "#FFFFFF",
+        position: "relative",
+        top: 10,
+        paddingHorizontal: 10
+    },
 
 });
 
